@@ -1,3 +1,4 @@
+
 package pro.sky.telegrambot.exception;
 
 public class TelegramBotException extends RuntimeException {

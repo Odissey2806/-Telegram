@@ -1,4 +1,6 @@
+
 package pro.sky.telegrambot.listener;
+
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
@@ -12,9 +14,12 @@ import pro.sky.telegrambot.service.NotificationTaskService;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Chat;
 
+
 import java.util.List;
 
+
 import static org.mockito.Mockito.*;
+
 
 @ExtendWith(MockitoExtension.class)
 class TelegramBotUpdatesListenerTest {
@@ -27,6 +32,7 @@ class TelegramBotUpdatesListenerTest {
 
     @InjectMocks
     private TelegramBotUpdatesListener listener;
+
 
     @Test
     void processUpdate_StartCommand_SendsWelcomeMessage() {
@@ -46,6 +52,7 @@ class TelegramBotUpdatesListenerTest {
         // Проверка
         verify(telegramBot, times(1)).execute(any(SendMessage.class));
     }
+
 
     @Test
     void processUpdate_ValidReminder_CallsService() {
