@@ -1,3 +1,4 @@
+
 package pro.sky.telegrambot.model;
 
 import jakarta.persistence.*;

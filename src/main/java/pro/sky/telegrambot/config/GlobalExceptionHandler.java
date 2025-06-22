@@ -38,3 +38,4 @@ public class GlobalExceptionHandler {
         log.error("Непредвиденная ошибка", e);
     }
 }
+
