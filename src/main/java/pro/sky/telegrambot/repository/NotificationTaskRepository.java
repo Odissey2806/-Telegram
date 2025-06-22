@@ -1,3 +1,4 @@
+
 package pro.sky.telegrambot.repository;
 
 import pro.sky.telegrambot.model.NotificationTask;

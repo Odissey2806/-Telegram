@@ -1,36 +1,36 @@
 databaseChangeLog:
-- changeSet:
-    id: 1
-    author: your_name
-    changes:
-      - createTable:
-          tableName: notification_tasks
-          columns:
-            - column:
-                name: id
-                type: bigint
-                autoIncrement: true
-                constraints:
-                  primaryKey: true
-                  nullable: false
-            - column:
-                name: chat_id
-                type: bigint
-                constraints:
-                  nullable: false
-            - column:
-                name: message
-                type: text
-                constraints:
-                  nullable: false
-            - column:
-                name: reminder_time
-                type: timestamp
-                constraints:
-                  nullable: false
-            - column:
-                name: is_sent
-                type: boolean
-                defaultValueBoolean: false
-                constraints:
-                  nullable: false
+  - changeSet:
+      id: 1
+      author: your_name
+      changes:
+        - createTable:
+            tableName: notification_tasks
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: chat_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: message
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: reminder_time
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_sent
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

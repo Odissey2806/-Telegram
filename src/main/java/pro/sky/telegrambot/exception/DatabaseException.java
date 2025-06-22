@@ -1,3 +1,4 @@
+
 package pro.sky.telegrambot.exception;
 
 import org.springframework.dao.DataAccessException;
