@@ -17,3 +17,8 @@ release.properties
 *.iws
 *.ipr
 out/
+
+# Конфиги с секретами
+src/main/resources/application-secret.properties
+src/main/resources/application-local.properties
+
